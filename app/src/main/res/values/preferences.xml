@@ -1,0 +1,6 @@
+<resources>
+    <!--当前服务是否暂停中-->
+    <string name="screenshot_service_paused_or_not_preference">screenshot_service_paused_or_not_preference</string>
+    <!--屏幕灭掉之前,当前服务正在处于暂停状态吗?-->
+    <string name="screenshot_service_pause_state_before_screen_off_preference">screenshot_service_pause_state_before_screen_off_preference</string>
+</resources>

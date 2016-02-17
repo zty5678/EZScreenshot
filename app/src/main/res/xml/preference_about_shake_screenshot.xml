@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:summary=""
+    android:title="">
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/shake_function_preference_default_value"
+        android:key="@string/shake_function_preference"
+        android:summaryOff="@string/shake_function_off"
+        android:summaryOn="@string/shake_function_on"
+        android:title="@string/setting_about_shake" />
+    <PreferenceCategory
+        android:dependency="@string/shake_function_preference"
+        android:title="@string/general">
+
+
+        <ListPreference
+            android:entries="@array/shake_sensitivity_array_keys"
+            android:entryValues="@array/shake_sensitivity_array_values"
+            android:key="@string/shake_sensitivity_preference"
+            android:summary="%s"
+            android:defaultValue="@string/shake_sensitivity_preference_default_value"
+            android:title="@string/set_shake_event_sensitivity">
+
+        </ListPreference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

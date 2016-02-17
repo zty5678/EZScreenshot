@@ -1,0 +1,99 @@
+<resources>
+
+    <!--一些点击项，不存值-->
+    <string name="setting_common_click_item_preference_key">setting_common_click_item_preference_key</string>
+    <string name="setting_about_notification_click_item_preference_key">setting_about_notification_click_item_preference_key</string>
+    <string name="setting_about_shake_click_item_preference_key">setting_about_shake_click_item_preference_key</string>
+
+
+    <!--开机启动-->
+    <string name="start_service_on_boot_preference">start_service_on_boot_preference</string>
+    <bool name="start_service_on_boot_default_value">false</bool>
+
+
+
+    <!--摇一摇-->
+    <string name="shake_function_preference">shake_function_preference</string>
+    <bool name="shake_function_preference_default_value">true</bool>
+
+    <!--振动-->
+    <string name="vibrate_when_screenshot_preference">vibrate_when_screenshot_preference</string>
+    <bool name="vibrate_when_screenshot_preference_default_value">true</bool>
+
+
+    <!--隐藏通知的状态栏图标-->
+    <string name="hide_statusbar_icon_preference">show_statusbar_icon_preference</string>
+    <bool name="hide_statusbar_icon_preference_default_value">false</bool>
+
+    <!--自动关闭系统的通知抽屉-->
+    <string name="auto_close_notificationdrawer_preference">auto_close_notificationdrawer_preference</string>
+    <bool name="auto_close_notificationdrawer_preference_default_value">true</bool>
+
+
+    <!--输出目录,版本号，帮助等-->
+    <string name="output_folder_preference">output_folder_preference</string>
+    <string name="app_version_preference">app_version_preference</string>
+    <string name="about_preference">about_preference</string>
+    <string name="help_preference">help_preference</string>
+
+    <!--自动关闭通知抽屉-->
+    <string name="close_notificationdrawer_delay_preference">close_notificationdrawer_delay_preference</string>
+    <string name="close_notificationdrawer_delay_preference_default_value">600</string>
+    <string-array name="close_notificationdrawer_delay_array_keys">
+        <item>0ms</item>
+        <item>100ms</item>
+        <item>200ms</item>
+        <item>300ms</item>
+        <item>400ms</item>
+        <item>500ms</item>
+        <item>600ms</item>
+        <item>700ms</item>
+        <item>800ms</item>
+    </string-array>
+    <string-array name="close_notificationdrawer_delay_array_values">
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+    </string-array>
+
+    <!--摇一摇的敏感度-->
+    <string name="shake_sensitivity_preference">shake_sensitivity_preference</string>
+    <string name="shake_sensitivity_preference_default_value">medium</string>
+    <string-array name="shake_sensitivity_array_values">
+        <item >light</item>
+        <item >medium</item>
+        <item >hard</item>
+    </string-array>
+
+
+
+    <!--输出图片质量-->
+    <string name="output_img_quality_prefence">output_img_quality_prefence</string>
+    <string name="output_img_quality_preference_default_value">80</string>
+    <string-array name="output_img_quality_array_keys">
+        <item >100%</item>
+        <item >90%</item>
+        <item >85%</item>
+        <item >80%</item>
+        <item >75%</item>
+        <item >70%</item>
+    </string-array>
+    <string-array name="output_img_quality_array_values">
+        <item >100</item>
+        <item >90</item>
+        <item >85</item>
+        <item >80</item>
+        <item >75</item>
+        <item >70</item>
+    </string-array>
+
+    <!--合成成功后显示一条通知-->
+    <string name="show_success_notification_preference">show_success_notification_preference</string>
+    <bool name="show_success_notification_preference_default_value">true</bool>
+</resources>

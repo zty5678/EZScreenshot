@@ -1,0 +1,150 @@
+<resources>
+
+    <string name="app_name">EZ Screenshot</string>
+
+
+    <string name="close">Close</string>
+
+    <string name="screenshot_service_is_pausing">Screenshot service paused</string>
+    <string name="screenshot_service_is_running">Screenshot service running</string>
+
+
+    <string name="general">General</string>
+    <string name="vibrate_when_screenshot">Vibrate when screenshotting</string>
+    <string name="vibrate_when_screenshot_off">No vibrate</string>
+    <string name="vibrate_when_screenshot_on">Vibrate</string>
+
+    <string name="setting_about_notification_and_notificationbartool_click_item_title">Notifications &amp; Notification bar</string>
+
+    <string name="notification_setting">Notifications setting</string>
+
+    <string name="notification_toolbar_setting">Notification bar setting</string>
+
+
+    <string name="setting_about_shake_click_item_title">Shake setting</string>
+    <string name="setting_about_shake">Shake detection</string>
+
+
+    <string name="output">Output</string>
+    <string name="output_folder">Output folder</string>
+    <string name="output_img_quality">Quality of output image</string>
+    <string name="help">Help</string>
+    <string name="version">Version</string>
+    <string name="about">About</string>
+    <string name="help_and_question">Help &amp; Questions</string>
+    <string name="hide_statusbar_icon_off">Show icon on statusbar</string>
+    <string name="hide_statusbar_icon_on">Hide icon on statusbar</string>
+    <string name="hide_statusbar_icon">Statusbar icon</string>
+    <string name="auto_close_notificationdrawer_off">No auto close</string>
+    <string name="auto_close_notificationdrawer_on">Auto close</string>
+    <string name="auto_close_notificationdrawer">Auto close notification drawer</string>
+    <string name="delay_of_close_notificationdrawer">Delay of closing-notification-drawer</string>
+
+    <string name="shake_function_off">No detection</string>
+    <string name="shake_function_on">Detect shake event</string>
+
+    <string name="set_shake_event_sensitivity">Shake sensitivity</string>
+    <string name="make_a_screenshot">Do it</string>
+    <string name="resume_service">Resume</string>
+    <string name="exit_service">Exit</string>
+    <string name="pause_service">Pause</string>
+
+    <string name="common_setting">Common setting</string>
+
+    <string name="show_success_notification">Show a notification after success</string>
+    <string name="show_success_notification_on">Yes</string>
+    <string name="show_success_notification_off">No</string>
+
+    <!--activity label-->
+    <string name="activity_label_setting_about_notification_and_notificationbartool">Setting of Notifications</string>
+    <string name="activity_label_setting_about_shake">Setting of shake</string>
+    <string name="activity_label_common_setting">Common setting</string>
+
+    <string-array name="shake_sensitivity_array_keys">
+        <item >Light</item>
+        <item >Medium</item>
+        <item >Hard</item>
+    </string-array>
+
+
+    <string name="advanced_setting">Advanced setting</string>
+    <string name="start_service_on_boot">Start service on boot</string>
+    <string name="start_service_on_boot_on">Yes</string>
+    <string name="start_service_on_boot_off">No</string>
+
+
+
+    <string name="app_help_string">
+ <![CDATA[
+
+<html>
+<head>
+<style type="text/css">
+p {
+
+}
+.question{
+    font-weight:bold;
+}
+.answer{
+
+}
+.answer p{
+  text-indent:1em;
+}
+</style>
+</head>
+<body>
+
+ <p class="question">1.What\'s the principle of EZ Screeasyshot?</p>
+ <div  class="answer">
+ <p>Screen Casting is built into Android Lollipop. This function can be used to record your screen. And also,can be used to make a screenshot.
+ </p>
+ </div>
+
+ <p class="question">2.Should I open shake event detection?</p>
+ <div  class="answer">
+ <p>The goodness is you can make a screenshot without any click.The badness is it may drain the battery.
+ </p>
+ <p>Tips: You may pause or exit the service when you don\'t use it(there are PAUSE and EXIT buttons in the permanent notification toolbar).
+ </p>
+ </div>
+
+ <p class="question">3.What is \"Delay of closing-notification-drawer\"?</p>
+ <div  class="answer">
+ <p>If you press the \"DO IT\" button to start screenshotting, you will find now the page is covered by system notification drawer. EZ Screenshot can help you close the system notification drawer.</p>
+ <p>The close action has an uncontrollable system animation which will cost some time. Screenshotting will start after a fixed delay of time.
+ </p>
+ </div>
+
+ <p class="question">4.Why I can\'t make screenshots on some pages of an APP?</p>
+ <div  class="answer">
+ <p>Probably this APP forbid the screenshotting on these pages.
+ </p>
+ </div>
+
+
+ <p class="question">5.For now what defects does EZ Screenshot have?</p>
+ <div  class="answer">
+ <p>(1).For now EZ Screenshot cannot make screenshots when screen is locked.</p>
+ <p>(2).When making a screenshot, there will be a Screen Casting icon on the status bar.Normally this icon will show up for seconds and then disappear.So the generated screenshot image will have this icon too.For now EZ Screenshot cannot erase the Screen Casting icon.</p>
+ <p>(3).If the Screen Casting icon just won\'t disappear, it may because some error occurred.The solution is stopping or reinstalling the app.
+ </p>
+ </div>
+
+
+ </body>
+
+</html>
+
+
+
+ ]]>
+    </string>
+    <string name="screenshot_generate_success" >Screenshotting succeed</string>
+    <string name="output_img_already_saved_to" >Image saved to %1$s</string>
+    <string name="screenshot_generate_fail" >Screenshotting fail</string>
+    <string name="error_occur_reason_is">Error occurred.Detail ：%1$s</string>
+
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skyrimcloud.app.easyscreenshot">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--开机启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!--umeng-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".ui.LaunchActivity"
+            android:theme="@style/AppThemeTranslucent">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.ScreenshotActivity"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@style/AppThemeTranslucent">
+
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.HelpActivity"
+            android:launchMode="singleTop"
+            android:label="@string/help"
+            android:theme="@style/AppTheme">
+
+
+        </activity>
+
+        <service android:name=".service.MyService" />
+
+        <receiver android:name=".service.MyReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF"></action>
+                <action android:name="android.intent.action.SCREEN_ON"></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+
+        <!--设置及子设置页面 -->
+
+        <activity
+            android:name=".ui.SettingActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.setting.SettingCommonActivity"
+            android:label="@string/activity_label_common_setting"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.setting.SettingNotificationbarFunctionActivity"
+            android:label="@string/activity_label_setting_about_notification_and_notificationbartool"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.setting.SettingShakeFunctionActivity"
+            android:label="@string/activity_label_setting_about_shake"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+        </activity>
+
+    </application>
+
+</manifest>

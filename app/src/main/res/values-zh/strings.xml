@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">EZ截屏</string>
+
+    <string name="close">关闭</string>
+
+    <string name="screenshot_service_is_pausing">截屏服务已暂停</string>
+    <string name="screenshot_service_is_running">截屏服务正在运行中</string>
+
+
+    <string name="general">常用</string>
+    <string name="vibrate_when_screenshot">截屏时震动</string>
+    <string name="vibrate_when_screenshot_off">已关闭</string>
+    <string name="vibrate_when_screenshot_on">已开启</string>
+
+    <string name="setting_about_notification_and_notificationbartool_click_item_title">通知&amp;通知栏</string>
+
+    <string name="notification_setting">通知设置</string>
+
+    <string name="notification_toolbar_setting">通知栏工具设置</string>
+
+
+    <string name="setting_about_shake_click_item_title">摇一摇截屏</string>
+    <string name="setting_about_shake">摇一摇截屏设置</string>
+
+
+    <string name="output">输出</string>
+    <string name="output_folder">输出目录</string>
+    <string name="output_img_quality">输出的图片质量</string>
+    <string name="help">帮助</string>
+    <string name="version">版本号</string>
+    <string name="about">关于</string>
+    <string name="help_and_question">帮助和疑问</string>
+    <string name="hide_statusbar_icon_off">已设为\'显示\'</string>
+    <string name="hide_statusbar_icon_on">已设为\'隐藏\'</string>
+    <string name="hide_statusbar_icon">隐藏状态栏图标</string>
+    <string name="auto_close_notificationdrawer_off">不关闭</string>
+    <string name="auto_close_notificationdrawer_on">自动关闭</string>
+    <string name="auto_close_notificationdrawer">截屏时自动关闭系统抽屉</string>
+    <string name="delay_of_close_notificationdrawer">延时一会儿再关闭系统抽屉</string>
+    <string name="shake_function_off">已关闭</string>
+    <string name="shake_function_on">已开启</string>
+
+    <string name="set_shake_event_sensitivity">设置灵敏度</string>
+    <string name="make_a_screenshot">截屏</string>
+    <string name="resume_service">恢复服务</string>
+    <string name="exit_service">退出</string>
+    <string name="pause_service">暂停服务</string>
+
+    <string name="common_setting">常用设置</string>
+
+    <string name="show_success_notification">截图生成成功后显示一条通知</string>
+    <string name="show_success_notification_on">已设为\'显示\'</string>
+    <string name="show_success_notification_off">已设为\'不显示\'</string>
+
+    <!--activity label-->
+    <string name="activity_label_setting_about_notification_and_notificationbartool">通知&amp;通知栏设置</string>
+    <string name="activity_label_setting_about_shake">摇一摇截屏设置</string>
+    <string name="activity_label_common_setting">常用设置</string>
+
+    <string-array name="shake_sensitivity_array_keys">
+        <item>轻轻摇</item>
+        <item>略用力摇</item>
+        <item>用力摇</item>
+    </string-array>
+
+    <string name="advanced_setting">高级设置</string>
+    <string name="start_service_on_boot">开机启动</string>
+    <string name="start_service_on_boot_on">开机启动</string>
+    <string name="start_service_on_boot_off">开机不启动</string>
+
+
+
+    <string name="app_help_string">
+ <![CDATA[
+
+<html>
+<head>
+<style type="text/css">
+p {
+
+}
+.question{
+    font-weight:bold;
+}
+.answer{
+
+}
+.answer p{
+  text-indent:1em;
+}
+</style>
+</head>
+<body>
+
+ <p class="question">1.EZ截屏的原理是什么?</p>
+ <div  class="answer">
+ <p>Android 5.0提供了投射屏幕(Cast screen)的功能。该功能可以用于录制屏幕，也可以用于截图。
+ </p>
+ </div>
+
+ <p class="question">2.开启摇一摇有什么好处和坏处？</p>
+ <div  class="answer">
+ <p>摇一摇截屏的好处是不用点击，在任何地方都只需摇一下就能截屏。缺点是比较费电。
+ </p>
+ <p>推荐: 在不使用的时候暂停service(点击通知栏工具里的“暂停”按钮)或退出service(点击通知栏工具里的“退出”按钮)
+ </p>
+ </div>
+
+ <p class="question">3.自动关闭系统抽屉是什么意思？</p>
+ <div  class="answer">
+ <p>如果你正在使用通知栏工具里的“截屏”按钮进行截屏，此时要截屏的界面是被系统通知抽屉遮住的.EZ截屏能够先帮你自动关闭系统通知抽屉，然后才开始执行截屏动作。</p>
+ <p>关闭系统通知抽屉需要一个过程，如果你发现EZ截屏生成的截图的顶部能明显看到通知抽屉的残余，那么可以试试把延时调高一些。
+ </p>
+ </div>
+
+ <p class="question">4.为什么某些APP的大部分界面可以进行截屏，而某些界面不能截屏（生成的图片是全黑的），例如支付宝的二维码付款页面？</p>
+ <div  class="answer">
+ <p>很可能是该APP对自己的某些界面做了“屏蔽截屏”的处理。
+ </p>
+ </div>
+
+
+ <p class="question">5.目前的缺陷有？</p>
+ <div  class="answer">
+ <p>①目前暂时无法实现在锁屏状态下进行截屏。</p>
+ <p>②在进行截图时，状态栏上也会出现一个投射屏幕的图标，大约隔几秒就会自动消失。生成的截图里也会有同样的图标，暂时无法消除。</p>
+ <p>③如果发现状态栏上的投射屏幕的图标迟迟不自动消失，可能是程序出错。解决方案：请尝试在应用信息界面强行停止掉EZ截屏，或重装本应用。
+ </p>
+ </div>
+
+
+
+ </body>
+
+</html>
+
+
+
+ ]]>
+    </string>
+    <string name="screenshot_generate_success" >截图生成成功</string>
+    <string name="output_img_already_saved_to" >已保存至%1$s</string>
+    <string name="screenshot_generate_fail" >截图生成失败</string>
+    <string name="error_occur_reason_is">出现错误。错误原因：%1$s</string>
+
+
+</resources>

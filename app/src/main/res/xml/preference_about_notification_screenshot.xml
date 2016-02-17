@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:summary=""
+    android:title="">
+
+    <PreferenceCategory
+        android:title="@string/notification_setting">
+        <CheckBoxPreference
+
+            android:defaultValue="@bool/show_success_notification_preference_default_value"
+            android:key="@string/show_success_notification_preference"
+            android:summaryOff="@string/show_success_notification_off"
+            android:summaryOn="@string/show_success_notification_on"
+            android:title="@string/show_success_notification" />
+
+        </PreferenceCategory>
+    <PreferenceCategory
+
+        android:title="@string/notification_toolbar_setting">
+
+
+        <CheckBoxPreference
+            android:defaultValue="@bool/hide_statusbar_icon_preference_default_value"
+            android:key="@string/hide_statusbar_icon_preference"
+            android:summaryOff="@string/hide_statusbar_icon_off"
+            android:summaryOn="@string/hide_statusbar_icon_on"
+            android:title="@string/hide_statusbar_icon" />
+
+        <CheckBoxPreference
+            android:defaultValue="@bool/auto_close_notificationdrawer_preference_default_value"
+            android:key="@string/auto_close_notificationdrawer_preference"
+            android:summaryOff="@string/auto_close_notificationdrawer_off"
+            android:summaryOn="@string/auto_close_notificationdrawer_on"
+            android:title="@string/auto_close_notificationdrawer" />
+
+        <ListPreference
+            android:defaultValue="@string/close_notificationdrawer_delay_preference_default_value"
+            android:dependency="@string/auto_close_notificationdrawer_preference"
+            android:entries="@array/close_notificationdrawer_delay_array_keys"
+            android:entryValues="@array/close_notificationdrawer_delay_array_values"
+            android:key="@string/close_notificationdrawer_delay_preference"
+            android:summary="%s"
+            android:title="@string/delay_of_close_notificationdrawer">
+
+        </ListPreference>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

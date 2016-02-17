@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:summary=""
+    android:title="">
+
+
+    <CheckBoxPreference
+    android:defaultValue="@bool/vibrate_when_screenshot_preference_default_value"
+    android:key="@string/vibrate_when_screenshot_preference"
+    android:summaryOff="@string/vibrate_when_screenshot_off"
+    android:summaryOn="@string/vibrate_when_screenshot_on"
+    android:title="@string/vibrate_when_screenshot" />
+    <CheckBoxPreference
+        android:defaultValue="@bool/start_service_on_boot_default_value"
+        android:key="@string/start_service_on_boot_preference"
+        android:summaryOff="@string/start_service_on_boot_off"
+        android:summaryOn="@string/start_service_on_boot_on"
+        android:title="@string/start_service_on_boot" />
+</PreferenceScreen>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="">
+
+
+    <Preference
+
+        android:key="@string/setting_common_click_item_preference_key"
+        android:summary=""
+        android:title="@string/common_setting"></Preference>
+
+
+
+    <PreferenceCategory android:title="@string/advanced_setting">
+        <Preference
+
+            android:key="@string/setting_about_notification_click_item_preference_key"
+            android:summary=""
+            android:title="@string/setting_about_notification_and_notificationbartool_click_item_title"></Preference>
+        <Preference
+            android:key="@string/setting_about_shake_click_item_preference_key"
+            android:summary=""
+            android:title="@string/setting_about_shake_click_item_title"></Preference>
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/output">
+        <Preference
+            android:key="@string/output_folder_preference"
+            android:summary=""
+            android:title="@string/output_folder"></Preference>
+        <ListPreference
+            android:defaultValue="@string/output_img_quality_preference_default_value"
+            android:entries="@array/output_img_quality_array_keys"
+            android:entryValues="@array/output_img_quality_array_values"
+            android:key="@string/output_img_quality_prefence"
+            android:summary="%s"
+            android:title="@string/output_img_quality">
+
+        </ListPreference>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/help">
+
+        <Preference
+            android:key="@string/app_version_preference"
+            android:title="@string/version"></Preference>
+        <Preference
+            android:key="@string/help_preference"
+            android:title="@string/help">
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
