@@ -6,8 +6,6 @@
 * Coolapk: http://www.coolapk.com/apk/com.skyrimcloud.app.easyscreenshot
 
 ### 截图:
-<img src="./art/screenshots/1.png" alt="Drawing" height="340px" width="200px" />
-<img src="./art/screenshots/2.png" alt="Drawing" height="340px" width="200px" />
-<img src="./art/screenshots/3.png" alt="Drawing" height="340px" width="200px" />
-<img src="./art/screenshots/4.png" alt="Drawing" height="340px" width="200px" />
+
+<img src="./art/screenshots/1.png" alt="Drawing" width="200" /> <img src="./art/screenshots/2.png" alt="Drawing" width="200" /> <img src="./art/screenshots/3.png" alt="Drawing" width="200" /> <img src="./art/screenshots/4.png" alt="Drawing" width="200" />
 
